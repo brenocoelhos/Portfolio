@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Portfólio - Breno Coelho</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+</head>
+
+<body>
+  <html lang="en">
+
+  <body>
+    <div class="container">
+      <nav id="header">
+        <div class="nav-logo">
+          <p class="nav-name">Breno Coelho</p>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+          <ul class="nav_menu_list">
+            <li class="nav_list">
+              <a href="#home" class="nav-link active-link">Home</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#about" class="nav-link">Sobre</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#projects" class="nav-link">Projetos</a>
+              <div class="circle"></div>
+            </li>
+            <li class="nav_list">
+              <a href="#contact" class="nav-link">Contato</a>
+              <div class="circle"></div>
+            </li>
+          </ul>
+        </div>
+        <div class="mode">
+          <div class="moon-sun" id="toggle-switch">
+            <i class="fa fa-moon" id="moon"></i>
+            <i class="fa fa-sun" id="sun"></i>
+          </div>
+        </div>
+        <div class="nav-menu-btn">
+          <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+      </nav>
+
+
+    <main class="wrapper">
+      <section class="featured-box" id="home">
+        <div class="featured-text">
+          <div class="hello">
+            <p>Olá! eu sou</p>
+          </div>
+          <div class="featured-name">
+            <span class="typedText"></span>
+          </div>
+          <div class="featured-text-info">
+            <p>Meu nome é Breno, e estou nessa jornada a 1 ano de experiência.
+            </p>
+          </div>
+          <div class="featured-text-btn">
+            <button class="btn blue-btn">Contrate</button>
+            <button class="btn">Download do Currículo <i class="uil uil-file-alt"></i></button>
+          </div>
+          <div class="social_icons">
+              <div class="icon_circle"></div>
+              <div class="icon"><a href="https://www.instagram.com/brenocoelhos" class="linkado"><i class="fa-brands fa-instagram"></i></a></div>
+              <div class="icon"><a href="https://www.linkedin.com/in/brenocoelhos/" class="linkado"><i class="uil uil-linkedin-alt" ></i></a></div>
+              <div class="icon"><a href="https://github.com/brenocoelhos" class="linkado"><i class="uil uil-github-alt"></i></a></div>
+            </div>
+        </div>
+        <div class="featured-image">
+          <div class="image">
+            <img src="main.png" alt="">
+          </div>
+        </div>
+        </section>
+        <!-- -------------- ABOUT BOX ---------------- -->
+        <section class="section" id="about">
+          <div class="top-header">
+            <h1>Sobre mim</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="about-info">
+                <figure class="about-me">
+                  <figcaption>
+                    <img src="main.png" alt="" class="profile" />
+                    <h2>Certificados de cursos concluídos</h2>
+                    <p>Grato por cada etapa de aprendizado! Certificados que representam o esforço e a dedicação em diversas áreas, sempre buscando expandir meus horizontes.</p>
+
+                </figure>
+                <button class="about-me-btn">Certificados</button>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-box">
+                <span class="title">HTML</span>
+                <div class="skill-bar">
+                  <span class="skill-per html">
+                    <span class="tooltip">80%</span>
+                  </span>
+                </div>
+              </div>
+              <div class="skill-box">
+                <span class="title">CSS</span>
+                <div class="skill-bar">
+                  <span class="skill-per css">
+                    <span class="tooltip">70%</span>
+                  </span>
+                </div>
+              </div>
+              <div class="skill-box">
+                <span class="title">Figma</span>
+                <div class="skill-bar">
+                  <span class="skill-per figma">
+                    <span class="tooltip">34%</span>
+                  </span>
+                </div>
+              </div>
+              <div class="skill-box">
+                <span class="title">JavaScript</span>
+                <div class="skill-bar">
+                  <span class="skill-per javascript">
+                    <span class="tooltip">26%</span>
+                  </span>
+                </div>
+              </div>
+              <div class="skill-box">
+                <span class="title">Python</span>
+                <div class="skill-bar">
+                  <span class="skill-per python">
+                    <span class="tooltip">20%</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- -------------- PROJECT BOX ---------------- -->
+
+        <section class="section" id="projects">
+          <div class="top-header">
+            <h1>Projetos</h1>
+          </div>
+          <div class="project-container">
+            <div class="project-box">
+              <h3>Projeto APAE Carandaí</h3>
+              <p>Projeto feito por mim e colegas da faculdade, de forma totalmente gratuita, com intuito de ajudar e apoiar a APAE.</p>
+              <button class="btn-project-box" id="apaeLink">Ver Projeto</button>
+            </div>
+            <div class="project-box">
+              <h3>Card title</h3>
+              <p>Some quick example text to build on the card title and make up
+                the bulk of the card's content.</p>
+              <button class="btn-project-box">Ver Projeto</button>
+            </div>
+            <div class="project-box">
+              <h3>Card title</h3>
+              <p>Some quick example text to build on the card title and make up
+                the bulk of the card's content.</p>
+              <button class="btn-project-box">Ver Projeto</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- -------------- CONTACT BOX ---------------- -->
+
+        <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Vamos Trabalhar Juntos!</h1>
+            <span>Tem vontade de fazer seu próprio projeto? entre em contato comigo</span>
+          </div>
+          <div class="row">
+            <div class="col">
+              <div class="contact-info">
+                <h2>Entre em Contato<i class="uil uil-corner-right-down"></i></h2>
+                <p><i class="uil uil-envelope"></i>brenocoelhos@gmail.com</p>
+                <p><i class="uil uil-phone"></i> Telefone:(32)98431-7275</p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-control">
+                <div class="form-inputs">
+                  <input type="text" class="input-field" placeholder="Seu Nome">
+                  <input type="text" class="input-field" placeholder="Seu Email">
+                </div>
+                <div class="text-area">
+                  <input type="text" class="input-subject" placeholder="Assunto">
+                  <textarea placeholder="Mensagem"></textarea>
+                </div>
+                <div class="form-button">
+                  <button class="btn">Enviar <i class="uil uil-message"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- --------------- FOOTER --------------- -->
+      <footer>
+        <div class="middle-footer">
+          <ul class="footer-menu">
+            <li class="footer_menu_list">
+              <a href="#home">Home</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="#about">Sobre</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="#projects">Projetos</a>
+            </li>
+            <li class="footer_menu_list">
+              <a href="#contact">Contato</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-social-icons">
+          <div class="icon"><a href="https://www.instagram.com/brenocoelhos" class="linkado"><i class="uil uil-instagram"></i></a></div>
+          <div class="icon"><a href="https://www.linkedin.com/in/brenocoelhos/" class="linkado"><i class="fa-brands fa-linkedin-in icon"></i></a></div>
+          <div class="icon"><a href="https://github.com/brenocoelhos" class="linkado"><i class="uil uil-github-alt"></i></a></div>
+        </div>
+        <div class="bottom-footer">
+          <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Breno Coelho</a> - todos os direitos
+            reservados 2024</p>
+        </div>
+      </footer>
+
+    </div>
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+  </body>
+
+  </html>
+  <!-- partial -->
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
