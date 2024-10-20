@@ -50,35 +50,38 @@
       </nav>
 
 
-    <main class="wrapper">
-      <section class="featured-box" id="home">
-        <div class="featured-text">
-          <div class="hello">
-            <p>Olá! eu sou</p>
-          </div>
-          <div class="featured-name">
-            <span class="typedText"></span>
-          </div>
-          <div class="featured-text-info">
-            <p>Meu nome é Breno, e estou nessa jornada a 1 ano de experiência.
-            </p>
-          </div>
-          <div class="featured-text-btn">
-            <button class="btn blue-btn">Contrate</button>
-            <button class="btn">Download do Currículo <i class="uil uil-file-alt"></i></button>
-          </div>
-          <div class="social_icons">
-              <div class="icon_circle"></div>
-              <div class="icon"><a href="https://www.instagram.com/brenocoelhos" class="linkado"><i class="fa-brands fa-instagram"></i></a></div>
-              <div class="icon"><a href="https://www.linkedin.com/in/brenocoelhos/" class="linkado"><i class="uil uil-linkedin-alt" ></i></a></div>
-              <div class="icon"><a href="https://github.com/brenocoelhos" class="linkado"><i class="uil uil-github-alt"></i></a></div>
+      <main class="wrapper">
+        <section class="featured-box" id="home">
+          <div class="featured-text">
+            <div class="hello">
+              <p>Olá! eu sou</p>
             </div>
-        </div>
-        <div class="featured-image">
-          <div class="image">
-            <img src="mainimg.png" alt="">
+            <div class="featured-name">
+              <span class="typedText"></span>
+            </div>
+            <div class="featured-text-info">
+              <p>Meu nome é Breno, e estou nessa jornada a 1 ano de experiência.
+              </p>
+            </div>
+            <div class="featured-text-btn">
+              <button class="btn blue-btn">Contrate</button>
+              <button class="btn" id="download-btn">Download do Currículo <i class="uil uil-file-alt"></i></button>
+            </div>
+            <div class="social_icons">
+              <div class="icon_circle"></div>
+              <div class="icon"><a href="https://www.instagram.com/brenocoelhos" class="linkado"><i
+                    class="fa-brands fa-instagram"></i></a></div>
+              <div class="icon"><a href="https://www.linkedin.com/in/brenocoelhos/" class="linkado"><i
+                    class="uil uil-linkedin-alt"></i></a></div>
+              <div class="icon"><a href="https://github.com/brenocoelhos" class="linkado"><i
+                    class="uil uil-github-alt"></i></a></div>
+            </div>
           </div>
-        </div>
+          <div class="featured-image">
+            <div class="image">
+              <img src="mainimg.png" alt="">
+            </div>
+          </div>
         </section>
         <!-- -------------- ABOUT BOX ---------------- -->
         <section class="section" id="about">
@@ -90,9 +93,10 @@
               <div class="about-info">
                 <figure class="about-me">
                   <figcaption>
-                    <img src="mainimg.png" alt="" class="profile" />
+                    <img src="Breno_memoji.png" alt="" class="profile" />
                     <h2>Certificados de cursos concluídos</h2>
-                    <p>Grato por cada etapa de aprendizado! Certificados que representam o esforço e a dedicação em diversas áreas, sempre buscando expandir meus horizontes.</p>
+                    <p>Grato por cada etapa de aprendizado! Certificados que representam o esforço e a dedicação em
+                      diversas áreas, sempre buscando expandir meus horizontes.</p>
 
                 </figure>
                 <button class="about-me-btn">Certificados</button>
@@ -132,10 +136,10 @@
                 </div>
               </div>
               <div class="skill-box">
-                <span class="title">Python</span>
+                <span class="title">C</span>
                 <div class="skill-bar">
-                  <span class="skill-per python">
-                    <span class="tooltip">20%</span>
+                  <span class="skill-per C">
+                    <span class="tooltip">77%</span>
                   </span>
                 </div>
               </div>
@@ -152,7 +156,8 @@
           <div class="project-container">
             <div class="project-box">
               <h3>Projeto APAE Carandaí</h3>
-              <p>Projeto feito por mim e colegas da faculdade, de forma totalmente gratuita, com intuito de ajudar e apoiar a APAE.</p>
+              <p>Projeto feito por mim e colegas da faculdade, de forma totalmente gratuita, com intuito de ajudar e
+                apoiar a APAE.</p>
               <button class="btn-project-box" id="apaeLink">Ver Projeto</button>
             </div>
             <div class="project-box">
@@ -186,23 +191,23 @@
               </div>
             </div>
             <div class="col">
-              <div class="form-control">
+              <form id="contact-form" class="form-control">
                 <div class="form-inputs">
-                  <input type="text" class="input-field" placeholder="Seu Nome">
-                  <input type="text" class="input-field" placeholder="Seu Email">
+                  <input type="text" id="name" name="name" class="input-field" placeholder="Seu Nome">
+                  <input type="email" id="email" name="email" class="input-field" placeholder="Seu Email">
                 </div>
                 <div class="text-area">
-                  <input type="text" class="input-subject" placeholder="Assunto">
-                  <textarea placeholder="Mensagem"></textarea>
+                  <input type="text" id="subject" name="subject" class="input-subject" placeholder="Assunto">
+                  <textarea id="message" name="message" placeholder="Mensagem"></textarea>
                 </div>
                 <div class="form-button">
-                  <button class="btn">Enviar <i class="uil uil-message"></i></button>
+                  <button type="submit" class="btn">Enviar <i class="uil uil-message"></i></button>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
         </section>
-
+        
       </main>
 
       <!-- --------------- FOOTER --------------- -->
@@ -224,9 +229,12 @@
           </ul>
         </div>
         <div class="footer-social-icons">
-          <div class="icon"><a href="https://www.instagram.com/brenocoelhos" class="linkado"><i class="uil uil-instagram"></i></a></div>
-          <div class="icon"><a href="https://www.linkedin.com/in/brenocoelhos/" class="linkado"><i class="fa-brands fa-linkedin-in icon"></i></a></div>
-          <div class="icon"><a href="https://github.com/brenocoelhos" class="linkado"><i class="uil uil-github-alt"></i></a></div>
+          <div class="icon"><a href="https://www.instagram.com/brenocoelhos" class="linkado"><i
+                class="uil uil-instagram"></i></a></div>
+          <div class="icon"><a href="https://www.linkedin.com/in/brenocoelhos/" class="linkado"><i
+                class="fa-brands fa-linkedin-in icon"></i></a></div>
+          <div class="icon"><a href="https://github.com/brenocoelhos" class="linkado"><i
+                class="uil uil-github-alt"></i></a></div>
         </div>
         <div class="bottom-footer">
           <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Breno Coelho</a> - todos os direitos
@@ -235,6 +243,9 @@
       </footer>
 
     </div>
+
+    <!-- ----- Envio de email automatico EMAILJS----- -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
     <!-- ----- TYPING JS Link ----- -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
