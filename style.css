@@ -184,13 +184,13 @@ body.dark #moon {
 
 /* ----- FEATURED TEXT BOX ----- */
 .featured-text {
-  position: absolute;
+  position: relative;
   display: flex;
   justify-content: center;
   align-content: center;
   min-height: 100vh;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
   padding-left: 20px;
   margin-top: 10%;
 }
@@ -213,7 +213,6 @@ body.dark #moon {
   font-size: 80px;
   font-weight: 600;
   text-transform: capitalize;
-
 }
 .featured-text-info {
   font-size: 16px;
@@ -257,6 +256,7 @@ i {
 
 
 .social_icons {
+  position: relative;
   display: flex;
   margin-top: 30px;
   margin-left: 5px;
