@@ -130,8 +130,12 @@ document.getElementById("download-btn").addEventListener("click", function () {
 });
 
 /* ----- envia o email  ----- */
-(function() {
+( async function() {
+   try {
     emailjs.init("23Nqfl-dRE325xdUo");
+  } catch (e) {
+    console.log(e); // 30
+  }
 })();
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {
@@ -143,17 +147,12 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 
         // Coleta os dados do formulário
         const templateParams = {
-            name: document.getElementById('name').value,
+           name:document.getElementById('name').value,
             subject: document.getElementById('subject').value, 
             email: document.getElementById('email').value,
             message: document.getElementById('message').value
         };
-
-        if (name === "" || subject === "" || email === "" || message === "") {
-                alert("Por favor, preencha todos os campos.");
-                return; // Sai da função se algum campo estiver vazio
-        }
-
+        
         // Envia o e-mail usando o EmailJS
         emailjs.send(serviceID, templateID, templateParams)
             .then(function(response) {
@@ -165,6 +164,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
                 console.error('Falha no envio do e-mail...', error);
                 alert('Falha ao enviar o e-mail. Tente novamente mais tarde.') ;
             });
+        
     });
 
 window.addEventListener("scroll", scrollActive);
