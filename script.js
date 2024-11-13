@@ -57,6 +57,10 @@ const srLeft = ScrollReveal({
   reset: true,
 });
 
+document.getElementById("whatsLink").addEventListener("click", function () {
+  window.open("https://wa.me/5532984317275", "_blank");
+});
+
 srLeft.reveal(".about-info", { delay: 100 });
 srLeft.reveal(".contact-info", { delay: 100 });
 
@@ -100,6 +104,12 @@ function scrollActive() {
 
 document.getElementById("apaeLink").addEventListener("click", function () {
   window.open("https://apaecarandai.netlify.app/", "_blank");
+});
+document.getElementById("calculadoraLink").addEventListener("click", function () {
+  window.open("https://projeto-calculadora-lilac.vercel.app", "_blank");
+});
+document.getElementById("barbeariaLink").addEventListener("click", function () {
+  window.open("https://barbearia-agenda.vercel.app", "_blank");
 });
 /*    document.getElementById("myButton").addEventListener("click", function() {
       window.open('https://www.exemplo.com', '_blank');
