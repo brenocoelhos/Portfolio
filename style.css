@@ -557,6 +557,7 @@ animation-delay: 0.1s;
   margin: 19px;
   font-size: 15px;
   color: var(--text-color);
+  height: 92px;
 }
 .project-box::after,
 .contact-info::after {
@@ -599,6 +600,7 @@ animation-delay: 0.1s;
     cursor: pointer;
     text-decoration: none;
 }
+
 
 /* ----- CONTACT BOX ----- */
 .contact-info {
@@ -764,6 +766,13 @@ footer {
     width: 320px;
     height: 320px;
   }
+  .project-box p {
+    margin-top: 0px;
+    margin-bottom: 19px;
+    margin-left: 19px;
+    margin-right: 19px;
+    overflow: hidden;
+    }
 }
 
 /* ----- 900px / RESPONSIVE ----- */
@@ -851,6 +860,13 @@ footer {
     align-items: center;
     margin-left: 60%;
 }
+.project-box p {
+    margin-top: 0px;
+    margin-bottom: 19px;
+    margin-left: 19px;
+    margin-right: 19px;
+    overflow: hidden;
+    }
 }
 
 /* ----- 540px / RESPONSIVE ----- */
@@ -876,4 +892,11 @@ footer {
   .image img {
     visibility: hidden;
   }
+  .project-box p {
+    margin-top: 0px;
+    margin-bottom: 19px;
+    margin-left: 19px;
+    margin-right: 19px;
+    overflow: hidden;
+    }
 }
