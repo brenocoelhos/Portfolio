@@ -499,11 +499,11 @@ animation-delay: 0.1s;
   animation-delay: 0.2s;
 }
 .skill-per.figma{
-  width: 34%;
+  width: 60%;
   animation-delay: 0.3s;
 }
   .skill-per.C{
-    width: 77%;
+    width: 89%;
     animation-delay: 0.3s;
 }
 @keyframes progress {
