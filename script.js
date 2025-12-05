@@ -111,16 +111,13 @@ document.getElementById("calculadoraLink").addEventListener("click", function ()
 document.getElementById("barbeariaLink").addEventListener("click", function () {
   window.open("https://barbearia-agenda.vercel.app", "_blank");
 });
+document.getElementById("socialmusicLink").addEventListener("click", function () {
+  window.open("https://socialmusic.vercel.app", "_blank");
+});
 document.getElementById("certificadoLink").addEventListener("click", function () {
   window.open("https://drive.google.com/drive/folders/1pvcxvwi-qeSBf8lLryQydZz-m4chy_vb?usp=sharing", "_blank");
 });
-/*    document.getElementById("myButton").addEventListener("click", function() {
-      window.open('https://www.exemplo.com', '_blank');
-    });
-    document.getElementById("myButton").addEventListener("click", function() {
-      window.open('https://www.exemplo.com', '_blank');
-    });
-*/
+
 
 /* ----- botão de download do curriculo----- */
 
